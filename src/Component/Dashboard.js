@@ -15,7 +15,7 @@ const Dashboard = () => {
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <div style={{ flexGrow: 1 }}>
         <Header />
-        <div style={{ padding: "20px", marginLeft: "200px" }}>
+        <div style={{ padding: "20px" }}>
           <h2>Dashboard</h2>
           <DashboardTable />
         </div>
