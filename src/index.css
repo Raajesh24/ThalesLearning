@@ -59,7 +59,7 @@ body {
 .sidebar {
   width: 260px;
   flex-shrink: 0;
-  background-color: rgba(22, 22, 22, 1);
+  background-color: rgb(44, 44, 167);
   height: 100vh;
   overflow: auto;
 }
