@@ -35,5 +35,10 @@
     "title": "Settings",
     "icon": "bi-bug",
     "path": "/report-bug"
+  },
+  {
+    "title": "POC File uploader",
+    "icon": "bi-bug",
+    "path": "/uploader"
   }
 ]
