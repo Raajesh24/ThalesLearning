@@ -21,19 +21,16 @@ const FileUpload = () => {
   const [po, setPo] = useState([]);
   const [fileUploadedMsg, setFileUploadedMsg] = useState("");
   const [fileUploaded, setFileUploaded] = useState(false);
-  const [poreceptiondate, setporeceptiondate] = useState(null);
 
   useEffect(() => {
     fetchPoDetails();
-  }, []);
+  }, [po]);
 
   const fetchPoDetails = () => {
     fetch("PoDetails.json")
       .then((res) => res.json())
       .then((data) => {
         setPo(data[0]);
-        console.log("podetails", data[0]);
-        console.log("podetails", po);
       });
   };
 
