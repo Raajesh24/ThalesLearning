@@ -1,7 +1,7 @@
 // import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 // import CloudUploadIcon from "@mui/icons-material/CloudUpload";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import "./fileUploadform.css";
 import Box from "@mui/material/Box";
@@ -40,18 +40,6 @@ const FileUpload = () => {
   const [tax, setTax] = useState("");
   const [shipping, setShipping] = useState("");
 
-  // useEffect(() => {
-  //   fetchPoDetails();
-  // }, [po]);
-
-  // const fetchPoDetails = () => {
-  //   fetch("PoDetails.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setPo(data[0]);
-  //     });
-  // };
-
   const fileChange = (e) => {
     setFile(e.target.files[0]);
     console.log(e.target.files[0]);
@@ -68,7 +56,6 @@ const FileUpload = () => {
     try {
       const response = await axios.post(
         "https://spring-boot-app-fvgvcmchhgcvayhr.southindia-01.azurewebsites.net/api/extract",
-        // "http://localhost:3000/api/files/extract",
         formData,
         {
           headers: {
