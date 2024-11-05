@@ -66,4 +66,5 @@ jobs:
         with:
           app-name: 'React-Application'
           package: './build'
+          clean: true
           
